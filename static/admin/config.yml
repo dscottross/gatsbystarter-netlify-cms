@@ -13,15 +13,15 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title Updated", name: "title", widget: "string"}
-      - {label: "Publish Date Updated", name: "date", widget: "datetime"}
-      - {label: "Description Updated", name: "description", widget: "text"}
+      - {label: "Title Updated Again", name: "title", widget: "string"}
+      - {label: "Publish Date Updated Again", name: "date", widget: "datetime"}
+      - {label: "Description Updated Again", name: "description", widget: "text"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Comments", name: "comments", widget: "list"}      
-
+git pgit p
   - name: "pages"
     label: "Pages"
     files:

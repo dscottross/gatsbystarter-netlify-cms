@@ -7,8 +7,16 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
+import columnControl from './Columns'
+
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
+
+CMS.registerWidget(
+    "columnsWidget",        // Widget name
+    columnControl,          // Editor component
+    columnPreview           // Preview component (this is optional)
+  );
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
